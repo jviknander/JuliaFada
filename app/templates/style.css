@@ -10,10 +10,11 @@ body {
 }
 .header{
     min-height: 100vh;
+    text-align: center;
     width: 100%;
     height: 100%;
-    position: relative;
-
+    padding: 20px 10px 30px 10px;
+    position: static;
 }
 .header a{
     display: grid;
@@ -23,7 +24,7 @@ body {
     text-decoration: none;
     font-size: 50px;
     line-height: 30px;
-    border-radius: 8px;
+    border-radius: 2px;
 }
 .nav {
     display: flex;
@@ -31,7 +32,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-links{
     flex: 1;
     text-align: center;
@@ -45,7 +45,7 @@ body {
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 .nav-links ul li::after{
     content: '';
@@ -59,6 +59,7 @@ body {
 .nav-links ul li:hover::after{
     width: 100%;
 }
+/*
 .text-box{
     width: 90%;
     color: #fff;
@@ -87,10 +88,19 @@ body {
     position: relative;
     cursor: pointer;
 }
+.hero-btn:hover{
+    border: 1px solid #metercoraqui;
+    background: #metercoraqui;
+    transition: 1s;
+}
+*/
+nav .fa{
+    display: none;
+}
 @media(max-width: 700px){
-    .text-box h1{
+    /*.text-box h1{
         font-size: 13px;
-    }
+    }*/
     .nav-links ul li{
         display: block;
     }
@@ -118,13 +128,12 @@ body {
     }
 }
 
-/*---yum---*/
+/*-:-:-:-:-:-:-:--:-:-:-:-:-:-:- yum -:-:-:-:-:-:-:--:-:-:-:-:-:-:-*/
 .yum{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
-
 }
 .yum-col{
     flex-basis: 32%;
@@ -135,9 +144,13 @@ body {
 }
 .yum-col img{
     width: 100%;
+    display: block;
+}
+.yum-col:hover{
+    box-shadow:  0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 h1{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
 }
 p{
@@ -147,37 +160,24 @@ p{
     line-height: 22px;
     padding: 10px;
 }
-
 .row{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
-}
-.yum-col{
-    flex-basis: 31%;
-    background: #a69ac7;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
 }
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
-.yum-col:hover{
-    box-shadow:  0 0 20px 0px rgba(0, 0, 0, 0.2);
 
-}
 @media(max-width: 700px){
     .row{
         flex-direction: column;
     }
 }
 
-/*-----fotos-----*/
+/*-:-:-:-:-:-:-:--:-:-:-:-:-:-:- fotos -:-:-:-:-:-:-:--:-:-:-:-:-:-:-*/
 
 .fotos{
     width: 80%;
@@ -192,11 +192,14 @@ h3{
     position: relative;
     overflow: hidden;
 }
-.campus-col img{
+.fotos-col img{
     width: 100%;
     display: block;
 }
-/*
+
+/*-:-:-:-:-:-:-:--:-:-:-:-:-:-:- layer effect -:-:-:-:-:-:-:--:-:-:-:-:-:-:-*/
+
+
 .layer{
     background: transparent;
     height: 100%;
@@ -207,7 +210,7 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-    background: rgba(226, 0, 0, 0.7);
+    background: rgba(5, 5, 0, 0.5);
 }
 .layer h3{
     width: 100%;
@@ -219,11 +222,3 @@ h3{
     transform: translateX(-50%);
     position: absolute;
 }
-
-.layer:hover h3{
-
-}
-*/
-
-
-

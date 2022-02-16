@@ -14,8 +14,8 @@
 	<section class="header">
 		<a href="/">viknandia</a>
 		<nav>
-			<h3>olá amigis <br>gosto de fazer muita coisa</br></h3>
-			<div class="nav-links" id="navlinks">
+			<h3>olá amigis<br>gosto de fazer muita coisa</br></h3>
+			<div class="nav-links" id="navLinks">
 				<i class="fa-solid fa-crystal-ball" onclick="hideMenu()"></i>
 				<ul>
 					<li><a href="yum.html">cozinhar</a></li>
@@ -24,7 +24,7 @@
 				</ul>		
 			</div>
 			</div>
-			<i class="fa-regular fa-crystal-ball" onclick="showMenu()"></i>
+			<i class="fa-regular fa-crystal-ball" onclick="hideMenu()"></i>
 		</nav>
 <!---<div class="text-box">
 	<h1>sejam bem vindos a mais um site de merda</h1>
@@ -33,20 +33,20 @@
 	<p>ver filmes</p>
 	<p>tirar fotos aos amigos</p>
 	</p>
+	<a href="" class="hero-btn">mimimimi</a>
 </div>!--->
-	
 	</section>
 <!---JS for toggle menu-->	
-<script>
-	var navlinks = document.getElementById("navLinks");
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
 
-	function showMenu(){
-		navLinks.style.right = "0";
-	}
-	function hideMenu(){
-		navLinks.style.right = "-200px";
-	}
-</script>
-
-</body>
+	</body>
 </html>
