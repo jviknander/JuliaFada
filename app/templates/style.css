@@ -3,139 +3,75 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
+    vertical-align: baseline;
 }
 body {
-    background-color : #f597d1;
-}
-.header{
-    min-height: 100vh;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding: 30px 10px 30px 10px;
-    position: static;
-}
-.header h3{
-    padding-top: 12px;
-    font-weight: 200;
-    text-align: left; 
-    padding-left: 30px;
-    font-size: 15px;
-    color: #fff;
-}
-.header a{
+    background-color : #f1affa;
     display: flex;
-    color: #b60f47;
-    text-align: left;
-    padding-left: 30px;
-    text-decoration: none;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+
+
+header{
+    padding: 30px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top_head a{
     font-size: 30px;
-    line-height: 30px;
-    border-radius: 2px;
+    color: #498323;
+    margin-bottom:;
 }
 
-.nav-links{
-    position: absolute;
-    top: 20%;
-}
-.nav-links ul{
+nav {
+    padding-top: 1cm;
     list-style: none;
-    display: inline-block;
-    padding-left: 20px;
-    position: relative;
-}
-.nav-links ul li a{
-    color: #5b67aa;
-    text-decoration: none;
-    font-size: 15px;
-}
-.nav-links ul li a::after{
-    color: #b60f47;
-}
-/*
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #b60f47;
     display: block;
-    margin: auto;
-    transition: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.nav-links ul li:hover::after{
-    width: 100%;
-}*/
+nav a{
+    font-size: 13px ;
+    color: #498323;
+}
 
-/*
-.text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    text-align: center;
-}
-.text-box h1{
-    font-size: 20px;
-}
-.text-box p{
-    font-size: 20px;
-    margin: 10px 0 40px;
-    color: #fff;
-}
-.hero-btn{
-    display: inline-block;
+a:link {
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.hero-btn:hover{
-    border: 1px solid #metercoraqui;
-    background: #metercoraqui;
-    transition: 1s;
+    color: #498323;
+ }
+
+header a:link {
+    text-decoration: none;
+    color: #498323;
 }
 
-nav .fa{
-    display:contents;
+.flex-container {
+    display:inline-block;
+    flex-direction: column;
 }
 
-@media(max-width: 700px){
-    /*.text-box h1{
-        font-size: 13px;
-    } ---------
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #8b2c7f;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 2s;
-    }
-    nav .fa{
-        display: block;
-        color: #49318a;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-
-    }
+.flex-container img {
+    padding: 40px 100px;
+    border: 4px solid #498323;
+    width: 60%;
+    display: block;
 }
-*/
+.flex-container p{
+    display: center;
+    padding: 40px 100px;
+}
+
+
 /*-:-:-:-:-:-:-:--:-:-:-:-:-:-:- yum -:-:-:-:-:-:-:--:-:-:-:-:-:-:-*/
 .yum{
     width: 50%;
@@ -163,7 +99,7 @@ h1{
     font-weight: 600;
 }
 p{
-    color: #49318a;
+    color: #3b8a31;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
